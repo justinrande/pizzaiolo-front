@@ -1,0 +1,14 @@
+{
+  "allergenes": [
+    { "id": 1, "nom": "Arachide" },
+    { "id": 2, "nom": "Soja" },
+    { "id": 3, "nom": "Lait" },
+    { "id": 4, "nom": "Gluten" }
+  ],
+  "ingredients": [
+    { "id": 1, "nom": "Oignons", "prix": 1 },
+    { "id": 2, "nom": "Saumon", "prix": 4 },
+    { "id": 3, "nom": "Chorizo", "prix": 3 },
+    { "id": 4, "nom": "Mozarella", "prix": 2 }
+  ]
+}
