@@ -1,0 +1,16 @@
+<div class="commande-pizza">
+  <app-selection-allergenes></app-selection-allergenes>
+
+  <h2>Base</h2>
+  <mat-form-field appearance="fill">
+    <mat-label>Favorite food</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let food of foods" [value]="food.value">
+        {{ food.viewValue }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <app-selection-ingredients></app-selection-ingredients>
+  <app-panier></app-panier>
+</div>
