@@ -1,6 +1,6 @@
 <h2>Ingrédients</h2>
-<mat-selection-list #shoes>
-  <mat-list-option *ngFor="let shoe of typesOfShoes">
-    {{ shoe }}
+<mat-selection-list>
+  <mat-list-option *ngFor="let ingredient of ingredients">
+    {{ ingredient.nom }}
   </mat-list-option>
 </mat-selection-list>

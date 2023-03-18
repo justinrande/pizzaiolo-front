@@ -3,11 +3,10 @@
 
   <h2>Base</h2>
   <mat-form-field appearance="fill">
-    <mat-label>Favorite food</mat-label>
+    <mat-label>Base</mat-label>
     <mat-select>
-      <mat-option *ngFor="let food of foods" [value]="food.value">
-        {{ food.viewValue }}
-      </mat-option>
+      <mat-option [value]="0">Tomate</mat-option>
+      <mat-option [value]="1">Crème</mat-option>
     </mat-select>
   </mat-form-field>
 
