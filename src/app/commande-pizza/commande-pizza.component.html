@@ -4,12 +4,15 @@
   <h2>Base</h2>
   <mat-form-field appearance="fill">
     <mat-label>Base</mat-label>
-    <mat-select>
+    <mat-select [formControl]="baseControl">
       <mat-option [value]="0">Tomate</mat-option>
       <mat-option [value]="1">Crème</mat-option>
     </mat-select>
   </mat-form-field>
 
-  <app-selection-ingredients></app-selection-ingredients>
+  <app-selection-ingredients
+    [control]="ingredientsControl"
+  ></app-selection-ingredients>
+
   <app-panier></app-panier>
 </div>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { Ingredient } from '../models/ingredient';
 import { IngredientsService } from '../services/ingredients.service';
 
@@ -8,6 +9,7 @@ import { IngredientsService } from '../services/ingredients.service';
   styleUrls: ['./selection-ingredients.component.css'],
 })
 export class SelectionIngredientsComponent implements OnInit {
+  @Input() control!: FormControl;
   ingredients: Ingredient[] = [];
 
   constructor(private ingredientsService: IngredientsService) {}
