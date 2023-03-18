@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { Ingredient } from '../models/ingredient';
 
 @Component({
   selector: 'app-commande-pizza',
@@ -7,6 +8,6 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./commande-pizza.component.css'],
 })
 export class CommandePizzaComponent {
-  ingredientsControl = new FormControl([]);
+  ingredientsControl = new FormControl<Ingredient[]>([], { nonNullable: true });
   baseControl = new FormControl();
 }

@@ -14,5 +14,8 @@
     [control]="ingredientsControl"
   ></app-selection-ingredients>
 
-  <app-panier></app-panier>
+  <app-panier
+    [ingredients]="ingredientsControl.value"
+    [base]="baseControl.value"
+  ></app-panier>
 </div>
