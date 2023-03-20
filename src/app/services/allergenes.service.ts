@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Allergenes } from '../models/allergenes';
+import { Allergene } from '../models/allergene';
 
 @Injectable({
   providedIn: 'root',
@@ -11,7 +11,7 @@ export class AllergenesService {
 
   constructor(private http: HttpClient) {}
 
-  getAllergenes(): Observable<Allergenes[]> {
-    return this.http.get<Allergenes[]>(`${this.API_URL}/allergenes`);
+  getAllergenes(): Observable<Allergene[]> {
+    return this.http.get<Allergene[]>(`${this.API_URL}/allergenes`);
   }
 }

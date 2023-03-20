@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Allergenes } from '../models/allergenes';
+import { Allergene } from '../models/allergene';
 import { AllergenesService } from '../services/allergenes.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { AllergenesService } from '../services/allergenes.service';
   styleUrls: ['./selection-allergenes.component.css'],
 })
 export class SelectionAllergenesComponent {
-  allergenes$?: Observable<Allergenes[]>;
+  allergenes$?: Observable<Allergene[]>;
 
   constructor(private allergenesService: AllergenesService) {}
 
